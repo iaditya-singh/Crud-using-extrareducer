@@ -3,13 +3,19 @@ import { Link } from 'react-router'
 
 const Register = () => {
     return (
-        <div className='px-20 py-20 w-screen'>
+        <div className='px-20 py-20 '>
 
             <div className='flex align-center justify-center   w-full  ' >
 
-                <div className=' w-1/2  rounded-tl-3xl overflow-hidden'><img className='w-full' src="public/pexels-rakicevic-nenad-233369-1262304.jpg" alt="" /> </div>
-                <form action="" className='flex bg-gray-200  w-1/2 flex-col rounded-br-3xl  p-10'>
-                    <label htmlFor="" className='mt-3'>Name </label>
+                <div className=' w-1/2  rounded-tl-3xl overflow-hidden'><img className='w-full' src="public/pexels-rakicevic-nenad-233369-1262304.jpg" alt="" /> 
+                </div>
+               
+               
+                <form action="" className='flex bg-gray-200 hover:bg-gray-300 transition-all duration-500   w-1/2 flex-col rounded-br-3xl  p-10'>
+                     <h1 className='align-center justify-center text-4xl font-thin flex '>Register <span  className='text-green-500 ml-2'>Now.</span></h1>
+
+                    
+                    <label htmlFor="" className='mt-10'>Name </label>
                     <input type="text" placeholder='Enter Your Name' required className='border border-gray-400 rounded-md mt-1 px-3 py-2' />
                     <label htmlFor="" className='mt-3'>Email</label>
                     <input type="text" placeholder='Enter Your Email' required className='border border-gray-400 rounded-md mt-1 px-3 py-2' />
@@ -27,5 +33,4 @@ const Register = () => {
         </div>
     )
 }
-
 export default Register
