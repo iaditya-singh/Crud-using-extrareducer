@@ -1,10 +1,11 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 import { Link } from 'react-router'
 
 
 const Navbar = () => {
 
-    let user = null;
+    const { user } = useSelector(state => state.auth)
 
 
     return (

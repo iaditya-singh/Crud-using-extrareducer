@@ -1,7 +1,12 @@
-import React from 'react'
-import { Link } from 'react-router'
+import React, { useEffect } from 'react'
+
+import { Link} from 'react-router'
 
 const Login = () => {
+
+
+ 
+
     return (
         <>
             <div className='px-20 py-20 w-screen'>
@@ -18,10 +23,10 @@ const Login = () => {
 
                         <label htmlFor="" className='mt-20'>Email</label>
                         <input type="text" placeholder='Enter Your Email or Username' required className='border border-gray-400 rounded-md mt-1 px-3 py-2' />
-                      
+
                         <label htmlFor="" className='mt-3'>Password</label>
                         <input type="text" placeholder='Enter Password' required className='border border-gray-400 rounded-md mt-1 px-3 py-2' />
-                       
+
 
                         <button className='bg-black border-black transition-all duration-400 hover:font-semibold cursor-pointer text-white rounded-md text-xl py-2 mt-16 hover:text-black hover:bg-white hover:border placeholder:'>Login</button>
 

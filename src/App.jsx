@@ -3,6 +3,9 @@ import Navbar from './Components/Navbar'
 import { BrowserRouter, Routes, Route } from 'react-router'
 import Home from './Pages/Home'
 import Login from './Pages/Login'
+import { ToastContainer } from 'react-toastify'
+
+
 import Register from './Pages/Register'
 
 const App = () => {
@@ -17,7 +20,9 @@ const App = () => {
           <Route path='/register' element={<Register />} />
 
         </Routes>
+        <ToastContainer />
       </BrowserRouter>
+
 
     </>
   )
